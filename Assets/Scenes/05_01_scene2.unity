@@ -301,6 +301,7 @@ GameObject:
   m_Component:
   - component: {fileID: 548173623}
   - component: {fileID: 548173622}
+  - component: {fileID: 548173624}
   m_Layer: 0
   m_Name: Video Player
   m_TagString: Untagged
@@ -359,6 +360,20 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &548173624
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 548173621}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fb855138dc44f3048899ff0fe884cceb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  videoPlayer: {fileID: 548173622}
+  videoName: Create_DeepFakes_video02_v03.mp4
 --- !u!1 &575908003
 GameObject:
   m_ObjectHideFlags: 0
@@ -1015,6 +1030,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dragDropScore: 0
+  loadSceneName: 
 --- !u!4 &1176305244
 Transform:
   m_ObjectHideFlags: 0
@@ -1792,7 +1808,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1986775093
 MonoBehaviour:
   m_ObjectHideFlags: 0

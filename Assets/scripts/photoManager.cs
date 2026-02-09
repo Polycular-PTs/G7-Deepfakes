@@ -15,6 +15,7 @@ public class photoManager : MonoBehaviour
     public float triggerTime = 3.0f;
 
     public int score;
+    public string loadSceneName = "05_01_scene2";
 
     // Start is called before the first frame update
     void Start()
@@ -27,7 +28,7 @@ public class photoManager : MonoBehaviour
     {
         if (score == 6)
         {
-            SceneManager.LoadScene("scene2");
+            SceneManager.LoadScene(loadSceneName);
         }
     }
 

@@ -6,12 +6,13 @@ using UnityEngine.SceneManagement;
 public class dragDropManager : MonoBehaviour
 {
     public int dragDropScore;
+    public string loadSceneName;
 
     void Update()
     {
         if (dragDropScore == 4)
         {
-            SceneManager.LoadScene("Quizz_2");
+            SceneManager.LoadScene(loadSceneName);
         }
     }
 }

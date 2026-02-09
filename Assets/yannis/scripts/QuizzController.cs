@@ -41,7 +41,7 @@ public class QuizzController : MonoBehaviour
     private bool hasLostLife = false;
     private bool isInputBlocked = false;
 
-    private List<int> currentShuffleMapping = new List<int>();
+    public List<int> currentShuffleMapping = new List<int>();
 
     void Start()
     {

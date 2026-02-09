@@ -1866,7 +1866,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4066847a0ecea4fd888bcac0f400540e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneErkennen: Yannis_Video
+  sceneErkennen: 03_00_Yannis_Video
   sceneErstellen: 
   sceneSimon: 
 --- !u!1 &2063941293

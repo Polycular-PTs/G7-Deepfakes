@@ -381,7 +381,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   myVideoPlayer: {fileID: 1779857538}
-  nextSceneName: homeScene
+  videoName: intro_v01.mp4
+  nextSceneName: 02_homeScene
 --- !u!4 &2054682383
 Transform:
   m_ObjectHideFlags: 0

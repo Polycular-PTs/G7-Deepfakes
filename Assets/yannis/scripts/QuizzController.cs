@@ -18,6 +18,7 @@ public class QuizzController : MonoBehaviour
     public TMP_Text questionText;
     public Button[] answerButtons;
     public Image lifeHeartImage;
+    public GameObject losePanel;
 
     [Header("Farben")]
     public Color correctColor = Color.green;
@@ -27,6 +28,7 @@ public class QuizzController : MonoBehaviour
     [Header("Grafics")]
     public Sprite redHeart;
     public Sprite greyHeart;
+    public Animator heartAnim;
 
     [System.Serializable]
     public class QuestionData
@@ -139,8 +141,16 @@ public class QuizzController : MonoBehaviour
         if (!hasLostLife)
         {
             hasLostLife = true;
-            if (greyHeart != null) lifeHeartImage.sprite = greyHeart;
-            else lifeHeartImage.color = Color.gray;
+            if (greyHeart != null && heartAnim != null)
+            {
+                //lifeHeartImage.sprite = greyHeart;
+                heartAnim.enabled = true;
+            }
+            else 
+            {
+                lifeHeartImage.color = Color.gray;
+            }
+            
         }
         else
         {
@@ -156,6 +166,12 @@ public class QuizzController : MonoBehaviour
 
     void LoseGame()
     {
-        SceneManager.LoadScene(loseScene);
+        foreach (var item in answerButtons)
+        {
+            item.interactable = false;
+        }
+
+        losePanel.SetActive(true);
+        //SceneManager.LoadScene(loseScene);
     }
 }

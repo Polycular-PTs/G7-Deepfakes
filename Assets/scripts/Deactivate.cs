@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class Deactivate : MonoBehaviour
 {
@@ -10,6 +11,7 @@ public class Deactivate : MonoBehaviour
     public Button buttonToActivate;
 
     public GameObject go;
+    public string sceneName;
 
     void Deativate()
     {
@@ -34,5 +36,10 @@ public class Deactivate : MonoBehaviour
         {
             go.SetActive(true);
         }
+    }
+
+    void LoadScene()
+    {
+        SceneManager.LoadScene(sceneName);
     }
 }

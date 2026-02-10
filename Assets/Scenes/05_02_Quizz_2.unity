@@ -1602,7 +1602,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cd2806adbca8d3e4dbf2608ed338a04a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  winScene: itemScene_02
+  winScene: 06_itemScene_02
   loseScene: Quizz_2
   questionText: {fileID: 1940198159}
   answerButtons:
@@ -1638,6 +1638,7 @@ MonoBehaviour:
     - Weil sie ohne Trainingsdaten arbeiten
     - Weil sie nur einfache Zufallswerte nutzen
     correctAnswerIndex: 0
+  currentShuffleMapping: 
 --- !u!1 &1793171725
 GameObject:
   m_ObjectHideFlags: 0

@@ -412,6 +412,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 189ce52ddb84f40f8bb5a8b3b57db717, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  startPos: {x: 0, y: 0}
   itemNr: 1
   canvas: {fileID: 1634198876}
 --- !u!114 &140292070
@@ -1074,7 +1075,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c1ecde456985247b5826ceaa4570b402, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  szenenName: simonVideo
+  szenenName: 07_simonVideo
 --- !u!1 &1118243137
 GameObject:
   m_ObjectHideFlags: 0
@@ -1164,6 +1165,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 189ce52ddb84f40f8bb5a8b3b57db717, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  startPos: {x: 0, y: 0}
   itemNr: 1
   canvas: {fileID: 1634198876}
 --- !u!225 &1118243142

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class ItemSlot : MonoBehaviour, IDropHandler
 {
@@ -18,6 +19,7 @@ public class ItemSlot : MonoBehaviour, IDropHandler
     public void OnDrop(PointerEventData eventData)
     {
         DragDrop draggedItem = eventData.pointerDrag.GetComponent<DragDrop>();
+        draggedItem.GetComponent<Image>().raycastTarget = false;
 
         Debug.Log("OnDrop");
         if (eventData.pointerDrag != null)
@@ -30,10 +32,13 @@ public class ItemSlot : MonoBehaviour, IDropHandler
             Debug.Log("Richtig");
             GreenFalshActive();
             dragDropScore.dragDropScore++;
+            draggedItem.GetComponent<RectTransform>().anchoredPosition = GetComponent<RectTransform>().anchoredPosition;
         }
         else
         {
             Debug.Log("Falsch");
+            draggedItem.GetComponent<RectTransform>().anchoredPosition = draggedItem.startPos;
+            draggedItem.GetComponent<Image>().raycastTarget = true;
             RedFalshActive();
         }
     }

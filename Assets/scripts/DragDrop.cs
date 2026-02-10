@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
+using UnityEngine.UI;
 
 public class DragDrop : MonoBehaviour, IPointerDownHandler, IBeginDragHandler, IEndDragHandler, IDragHandler, IDropHandler
 {
@@ -10,6 +11,7 @@ public class DragDrop : MonoBehaviour, IPointerDownHandler, IBeginDragHandler, I
     private CanvasGroup canvasGroup;
 
     private Transform originalParent;
+    public Vector2 startPos;
 
     public int itemNr;
 
@@ -19,6 +21,7 @@ public class DragDrop : MonoBehaviour, IPointerDownHandler, IBeginDragHandler, I
     {
         rectTransform = GetComponent<RectTransform>();
         canvasGroup = GetComponent<CanvasGroup>();
+        
     }
 
     public void OnBeginDrag(PointerEventData eventData)
@@ -26,7 +29,7 @@ public class DragDrop : MonoBehaviour, IPointerDownHandler, IBeginDragHandler, I
         //Debug.Log("OnBeginDrag");
         canvasGroup.alpha = .6f;
         canvasGroup.blocksRaycasts = false;
-
+        startPos = rectTransform.anchoredPosition;
     }
 
     public void OnDrag(PointerEventData eventData)
@@ -42,20 +45,7 @@ public class DragDrop : MonoBehaviour, IPointerDownHandler, IBeginDragHandler, I
 
         if (eventData.pointerEnter != null)
         {
-            HotbarSlot slot = eventData.pointerEnter.GetComponent<HotbarSlot>();
-
-            if (slot != null)
-            {
-                transform.SetParent(slot.transform, false);
-                rectTransform.anchoredPosition = Vector2.zero;
-                rectTransform.localScale = Vector3.one;
-                return;
-            }
-            else
-            {
-                transform.SetParent(originalParent);
-                rectTransform.anchoredPosition = Vector2.zero;
-            }
+            //GetComponent<Image>().raycastTarget = false;
         }
     }
 
@@ -66,6 +56,10 @@ public class DragDrop : MonoBehaviour, IPointerDownHandler, IBeginDragHandler, I
 
     public void OnDrop(PointerEventData eventData)
     {
-        throw new System.NotImplementedException();
+        if (eventData.pointerEnter != null)
+        {
+            //GetComponent<Image>().raycastTarget = true;
+
+        }
     }
 }

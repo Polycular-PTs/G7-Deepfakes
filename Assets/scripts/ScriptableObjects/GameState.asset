@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 66749af2f8783064da589e882dbfeb90, type: 3}
   m_Name: GameState
   m_EditorClassIdentifier: 
-  indexQuiz: 2
+  indexQuiz: 0
   quizzes:
   - nextSceneToLoad: 02_homeScene
     questions:
@@ -65,7 +65,7 @@ MonoBehaviour:
       - Das Video in Zeitlupe anzusehen.
       - "Die Lautst\xE4rke des Videos zu erh\xF6hen."
       correctAnswerIndex: 0
-    quizCompleted: 1
+    quizCompleted: 0
   - nextSceneToLoad: 02_homeScene
     questions:
     - question: Welche Schritte sind typisch bei der Erstellung von Deepfakes?

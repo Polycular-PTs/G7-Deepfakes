@@ -37,7 +37,7 @@ MonoBehaviour:
       - Nur Politiker
       - Weil sie nur einfache Zufallswerte nutzen
       correctAnswerIndex: 0
-    quizCompleted: 1
+    quizCompleted: 0
   - nextSceneToLoad: 02_homeScene
     questions:
     - question: "Welches biologische Merkmal im Gesicht ist oft ein Hinweis darauf,

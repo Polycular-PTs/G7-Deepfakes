@@ -40,7 +40,7 @@ public class SceneManagement : MonoBehaviour
         videoPlayerPart3.loopPointReached += OnVideo3Finished;
     }
 
-    void OnVideo1Finished(VideoPlayer vp)
+    public void OnVideo1Finished(VideoPlayer vp)
     {
         part1.SetActive(false);
 
@@ -79,9 +79,21 @@ public class SceneManagement : MonoBehaviour
         videoPlayerPart3.Play();
     }
 
-    void OnVideo3Finished(VideoPlayer vp)
+    public void OnVideo3Finished(VideoPlayer vp)
     {
         Debug.Log("Video 3 fertig. Lade Quiz-Szene.");
         SceneManager.LoadScene(nextScene);
+    }
+
+    public void Skip()
+    {
+        if (part1.activeInHierarchy)
+        {
+            OnVideo1Finished(videoPlayerPart2);
+        }
+        else {
+
+            SceneManager.LoadScene(nextScene);
+        }
     }
 }

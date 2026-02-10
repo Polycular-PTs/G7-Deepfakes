@@ -16,6 +16,7 @@ public class photoManager : MonoBehaviour
 
     public int score;
     public string loadSceneName = "05_01_scene2";
+    public GameObject grid;
 
     // Start is called before the first frame update
     void Start()
@@ -49,5 +50,20 @@ public class photoManager : MonoBehaviour
         Debug.Log("Button Sind Aktiv");
     }
 
+    public void Skip()
+    {
+        StopAllCoroutines();
+        photoButtons[0].gameObject.SetActive(true);
+        photoButtons[1].gameObject.SetActive(true);
+        photoButtons[2].gameObject.SetActive(true);
+        photoButtons[3].gameObject.SetActive(true);
+        photoButtons[4].gameObject.SetActive(true);
+        photoButtons[5].gameObject.SetActive(true);
+        photoButtons[6].gameObject.SetActive(true);
+        photoButtons[7].gameObject.SetActive(true);
+        photoButtons[8].gameObject.SetActive(true);
+        grid.SetActive(true);
+        intro.gameObject.SetActive(false);
+    }
 
 }

@@ -1602,8 +1602,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cd2806adbca8d3e4dbf2608ed338a04a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  winScene: 04_itemScene_01
-  loseScene: Quizz_1
+  quizzes: {fileID: 11400000, guid: 7263b9dc3176d874fae5b1744172ccb4, type: 2}
+  winScene: 
+  loseScene: Quiz
   questionText: {fileID: 1940198159}
   answerButtons:
   - {fileID: 1471835912}
@@ -1616,32 +1617,7 @@ MonoBehaviour:
   defaultColor: {r: 1, g: 1, b: 1, a: 1}
   redHeart: {fileID: 21300000, guid: 37295eb643b9ba54ea75b27e5804dd3e, type: 3}
   greyHeart: {fileID: 21300000, guid: 290bc99a49ba8d849ae980c5cf66cfc0, type: 3}
-  questions:
-  - question: "Welches biologische Merkmal im Gesicht ist oft ein Hinweis darauf,
-      dass ein Video eine KI-F\xE4lschung sein k\xF6nnte?"
-    answers:
-    - "Die Person blinzelt gar nicht oder unnat\xFCrlich wenig."
-    - "Die Augenbrauen bewegen sich \xFCberhaupt nicht."
-    - "Die Augenfarbe \xE4ndert sich st\xE4ndig."
-    - "Die Person tr\xE4gt immer eine Brille."
-    correctAnswerIndex: 0
-  - question: "An welchen Stellen im Bild treten besonders h\xE4ufig sogenannte 'Artefakte'
-      oder kleine Fehler bei Deepfakes auf?"
-    answers:
-    - "An den R\xE4ndern, wie bei Haaren und Ohren."
-    - "Ausschlie\xDFlich in den Pupillen."
-    - Nur am unteren Bildrand.
-    - In der Mitte der Nase.
-    correctAnswerIndex: 0
-  - question: "Was ist laut Video der wichtigste Tipp, um die Glaubw\xFCrdigkeit
-      eines verd\xE4chtigen Beitrags einzusch\xE4tzen?"
-    answers:
-    - "Unnat\xFCrlich glatte Haut kann ein Hinweis sein, aber die Pr\xFCfung der
-      Quelle liefert eine viel sicherere Best\xE4tigung."
-    - Die Hautfarbe der Person zu analysieren.
-    - Das Video in Zeitlupe anzusehen.
-    - "Die Lautst\xE4rke des Videos zu erh\xF6hen."
-    correctAnswerIndex: 0
+  questions: []
   currentShuffleMapping: 
 --- !u!1 &1793171725
 GameObject:

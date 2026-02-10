@@ -12,4 +12,9 @@ public class nextScene : MonoBehaviour
     {
         SceneManager.LoadScene(szenenName);
     }
+
+    public void LoadNewScene(string szenenName)
+    {
+        SceneManager.LoadScene(szenenName);
+    }
 }

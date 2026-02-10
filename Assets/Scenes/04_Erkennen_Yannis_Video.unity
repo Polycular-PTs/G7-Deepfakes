@@ -956,7 +956,7 @@ MonoBehaviour:
   videoPlayerPart2: {fileID: 923370203}
   videoPlayerPart3: {fileID: 748008649}
   video2Slider: {fileID: 959253657}
-  nextScene: 03_01_Quizz_1
+  nextScene: Quiz
 --- !u!4 &966401281
 Transform:
   m_ObjectHideFlags: 0

@@ -7,6 +7,9 @@ using TMPro;
 
 public class QuizzController : MonoBehaviour
 {
+    [Header("Global Reference")]
+    public Quizzes quizzes;
+
     [Header("Scenes")]
     public string winScene;
     public string loseScene;
@@ -45,6 +48,8 @@ public class QuizzController : MonoBehaviour
 
     void Start()
     {
+        questions = quizzes.quizzes[quizzes.indexQuiz].questions;
+        winScene = quizzes.quizzes[quizzes.indexQuiz].nextSceneToLoad;
         currentQuestionIndex = 0;
         hasLostLife = false;
 
@@ -145,6 +150,7 @@ public class QuizzController : MonoBehaviour
 
     void WinGame()
     {
+        quizzes.quizzes[quizzes.indexQuiz].quizCompleted = true;
         SceneManager.LoadScene(winScene);
     }
 

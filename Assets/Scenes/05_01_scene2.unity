@@ -1108,7 +1108,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dragDropScore: 0
-  loadSceneName: 05_02_Quizz_2
+  loadSceneName: Quiz
 --- !u!4 &1176305244
 Transform:
   m_ObjectHideFlags: 0
@@ -1935,6 +1935,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   anim: {fileID: 1986775097}
+  buttonToActivate: {fileID: 0}
+  go: {fileID: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

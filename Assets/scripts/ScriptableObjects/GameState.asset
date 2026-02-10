@@ -1,0 +1,92 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 66749af2f8783064da589e882dbfeb90, type: 3}
+  m_Name: GameState
+  m_EditorClassIdentifier: 
+  indexQuiz: 2
+  quizzes:
+  - nextSceneToLoad: 02_homeScene
+    questions:
+    - question: Was sind Deepfakes?
+      answers:
+      - Manipulierte Medien, die echt wirken
+      - "Alte Filmaufnahmen in schlechter Qualit\xE4t"
+      - "Zuf\xE4llig generierte Bilder ohne Zweck"
+      - Echte Videos, die ohne KI bearbeitet wurden
+      correctAnswerIndex: 0
+    - question: "Warum k\xF6nnen Deepfakes gef\xE4hrlich sein?"
+      answers:
+      - "Sie k\xF6nnen f\xFCr Erpressung, Rufmord oder Desinformation genutzt werden"
+      - "Sie ben\xF6tigen sehr viel Speicherplatz"
+      - Sie funktionieren nur bei Prominenten
+      - "Sie sind nur f\xFCr Filme nutzbar"
+      correctAnswerIndex: 0
+    - question: Wer kann heute Opfer eines Deepfakes werden?
+      answers:
+      - "Jeder \u2013 schon wenige Bilder oder Tonaufnahmen reichen aus"
+      - "Nur ber\xFChmte Personen"
+      - Nur Politiker
+      - Weil sie nur einfache Zufallswerte nutzen
+      correctAnswerIndex: 0
+    quizCompleted: 1
+  - nextSceneToLoad: 02_homeScene
+    questions:
+    - question: "Welches biologische Merkmal im Gesicht ist oft ein Hinweis darauf,
+        dass ein Video eine KI-F\xE4lschung sein k\xF6nnte?"
+      answers:
+      - "Die Person blinzelt gar nicht oder unnat\xFCrlich wenig."
+      - "Die Augenbrauen bewegen sich \xFCberhaupt nicht."
+      - "Die Augenfarbe \xE4ndert sich st\xE4ndig."
+      - "Die Person tr\xE4gt immer eine Brille."
+      correctAnswerIndex: 0
+    - question: "An welchen Stellen im Bild treten besonders h\xE4ufig sogenannte
+        'Artefakte' oder kleine Fehler bei Deepfakes auf?"
+      answers:
+      - "An den R\xE4ndern, wie bei Haaren und Ohren."
+      - "Ausschlie\xDFlich in den Pupillen."
+      - Nur am unteren Bildrand.
+      - In der Mitte der Nase.
+      correctAnswerIndex: 0
+    - question: "Was ist laut Video der wichtigste Tipp, um die Glaubw\xFCrdigkeit
+        eines verd\xE4chtigen Beitrags einzusch\xE4tzen?"
+      answers:
+      - "Unnat\xFCrlich glatte Haut kann ein Hinweis sein, aber die Pr\xFCfung der
+        Quelle liefert eine viel sicherere Best\xE4tigung."
+      - Die Hautfarbe der Person zu analysieren.
+      - Das Video in Zeitlupe anzusehen.
+      - "Die Lautst\xE4rke des Videos zu erh\xF6hen."
+      correctAnswerIndex: 0
+    quizCompleted: 1
+  - nextSceneToLoad: 02_homeScene
+    questions:
+    - question: Welche Schritte sind typisch bei der Erstellung von Deepfakes?
+      answers:
+      - Datensammlung, KI-Training, Generierung
+      - Nur manuelle Bildbearbeitung ohne KI
+      - "Dateiverschl\xFCsselung und Komprimierung"
+      - Umwandeln von Dateien in andere Formate
+      correctAnswerIndex: 0
+    - question: Was ist die Aufgabe des Encoders?
+      answers:
+      - Wandelt Merkmale im Gesicht in Zahlenwerte um
+      - "Besch\xF6nigung"
+      - Ergebnisse ohne Berechnung zu speichern
+      - In der Mitte der Nase.
+      correctAnswerIndex: 0
+    - question: Warum haben GAN-Systeme echtere Ergebnisse?
+      answers:
+      - "Sie trainiert und pr\xFCft sich selbst"
+      - Weil sie nur Vorlagen kopieren
+      - Weil sie ohne Trainingsdaten arbeiten
+      - Weil sie nur einfache Zufallswerte nutzen
+      correctAnswerIndex: 0
+    quizCompleted: 0

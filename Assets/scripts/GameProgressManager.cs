@@ -5,15 +5,13 @@ using UnityEngine.UI;
 
 public class GameProgressManager : MonoBehaviour
 {
-    public Quizzes gameState;
     public int currentQuiz = 0;
     public Button[] buttons;
-
 
     // Start is called before the first frame update
     void Start()
     {
-        currentQuiz = gameState.indexQuiz;
+        currentQuiz = QuizzesSingleton.instance.indexQuiz;
         buttons[currentQuiz].interactable = true;
 
         for (int i = 0; i < buttons.Length; i++)
@@ -26,7 +24,7 @@ public class GameProgressManager : MonoBehaviour
             buttons[i].GetComponent<Animator>().SetTrigger("AlreadyRevealed");
         }
 
-        if (gameState.quizzes[currentQuiz].quizCompleted)
+        if (QuizzesSingleton.instance.quizzes[currentQuiz].quizCompleted)
         {
             buttons[currentQuiz].GetComponent<Animator>().enabled = true;
             buttons[currentQuiz].GetComponent<Animator>().SetTrigger("Reveal_Item");
@@ -35,9 +33,9 @@ public class GameProgressManager : MonoBehaviour
 
     public void NextQuiz(int index)
     {
-        if (gameState.indexQuiz == index - 1)
+        if (QuizzesSingleton.instance.indexQuiz == index - 1)
         {
-            gameState.indexQuiz++;
+            QuizzesSingleton.instance.indexQuiz++;
         }
         
     }

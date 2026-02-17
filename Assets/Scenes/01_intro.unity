@@ -215,6 +215,128 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1018663562
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1018663563}
+  - component: {fileID: 1018663564}
+  m_Layer: 0
+  m_Name: QuizzesSingleton
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1018663563
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1018663562}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 974.192, y: 506.74936, z: -1.9648879}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1018663564
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1018663562}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d2c03706fecfe049bba7caf7bdfc2e8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  quizzes:
+  - nextSceneToLoad: 02_homeScene
+    questions:
+    - question: Was sind Deepfakes?
+      answers:
+      - Manipulierte Medien, die echt wirken
+      - "Alte Filmaufnahmen in schlechter Qualit\xE4t"
+      - "Zuf\xE4llig generierte Bilder ohne Zweck"
+      - Echte Videos, die ohne KI bearbeitet wurden
+      correctAnswerIndex: 0
+    - question: "Warum k\xF6nnen Deepfakes gef\xE4hrlich sein?"
+      answers:
+      - "Sie k\xF6nnen f\xFCr Erpressung, Rufmord oder Desinformation genutzt werden"
+      - "Sie ben\xF6tigen sehr viel Speicherplatz"
+      - Sie funktionieren nur bei Prominenten
+      - "Sie sind nur f\xFCr Filme nutzbar"
+      correctAnswerIndex: 0
+    - question: Wer kann heute Opfer eines Deepfakes werden?
+      answers:
+      - "Jeder \u2013 schon wenige Bilder oder Tonaufnahmen reichen aus"
+      - "Nur ber\xFChmte Personen"
+      - Nur Politiker
+      - Weil sie nur einfache Zufallswerte nutzen
+      correctAnswerIndex: 0
+    quizCompleted: 0
+  - nextSceneToLoad: 02_homeScene
+    questions:
+    - question: "Welches biologische Merkmal im Gesicht ist oft ein Hinweis darauf,
+        dass ein Video eine KI-F\xE4lschung sein k\xF6nnte?"
+      answers:
+      - "Die Person blinzelt gar nicht oder unnat\xFCrlich wenig."
+      - "Die Augenbrauen bewegen sich \xFCberhaupt nicht."
+      - "Die Augenfarbe \xE4ndert sich st\xE4ndig."
+      - "Die Person tr\xE4gt immer eine Brille."
+      correctAnswerIndex: 0
+    - question: "An welchen Stellen im Bild treten besonders h\xE4ufig sogenannte
+        'Artefakte' oder kleine Fehler bei Deepfakes auf?"
+      answers:
+      - "An den R\xE4ndern, wie bei Haaren und Ohren."
+      - "Ausschlie\xDFlich in den Pupillen."
+      - Nur am unteren Bildrand.
+      - In der Mitte der Nase.
+      correctAnswerIndex: 0
+    - question: "Was ist laut Video der wichtigste Tipp, um die Glaubw\xFCrdigkeit
+        eines verd\xE4chtigen Beitrags einzusch\xE4tzen?"
+      answers:
+      - "Unnat\xFCrlich glatte Haut kann ein Hinweis sein, aber die Pr\xFCfung der
+        Quelle liefert eine viel sicherere Best\xE4tigung."
+      - Die Hautfarbe der Person zu analysieren.
+      - Das Video in Zeitlupe anzusehen.
+      - "Die Lautst\xE4rke des Videos zu erh\xF6hen."
+      correctAnswerIndex: 0
+    quizCompleted: 0
+  - nextSceneToLoad: 02_homeScene
+    questions:
+    - question: Welche Schritte sind typisch bei der Erstellung von Deepfakes?
+      answers:
+      - Datensammlung, KI-Training, Generierung
+      - Nur manuelle Bildbearbeitung ohne KI
+      - "Dateiverschl\xFCsselung und Komprimierung"
+      - Umwandeln von Dateien in andere Formate
+      correctAnswerIndex: 0
+    - question: Was ist die Aufgabe des Encoders?
+      answers:
+      - Wandelt Merkmale im Gesicht in Zahlenwerte um
+      - "Besch\xF6nigung"
+      - Ergebnisse ohne Berechnung zu speichern
+      - In der Mitte der Nase.
+      correctAnswerIndex: 0
+    - question: Warum haben GAN-Systeme echtere Ergebnisse?
+      answers:
+      - "Sie trainiert und pr\xFCft sich selbst"
+      - Weil sie nur Vorlagen kopieren
+      - Weil sie ohne Trainingsdaten arbeiten
+      - Weil sie nur einfache Zufallswerte nutzen
+      correctAnswerIndex: 0
+    quizCompleted: 0
+  indexQuiz: 0
 --- !u!1 &1447101025
 GameObject:
   m_ObjectHideFlags: 0
@@ -522,3 +644,4 @@ SceneRoots:
   - {fileID: 1447101028}
   - {fileID: 2054682383}
   - {fileID: 140039813087799391}
+  - {fileID: 1018663563}

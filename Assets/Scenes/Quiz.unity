@@ -1827,10 +1827,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 800, y: 600}
+  m_ReferenceResolution: {x: 1920, y: 1080}
   m_ScreenMatchMode: 0
   m_MatchWidthOrHeight: 0
   m_PhysicalUnit: 3
@@ -1931,7 +1931,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cd2806adbca8d3e4dbf2608ed338a04a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  quizzes: {fileID: 11400000, guid: 7263b9dc3176d874fae5b1744172ccb4, type: 2}
+  indexQuiz: 0
   winScene: 
   loseScene: Quiz
   questionText: {fileID: 1940198159}

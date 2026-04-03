@@ -1268,6 +1268,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: SkipCanvas
       objectReference: {fileID: 0}
+    - target: {fileID: 6942099696410061987, guid: 7ff2c130112d09f4796c4b0598a0f291, type: 3}
+      propertyPath: m_UiScaleMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6942099696410061987, guid: 7ff2c130112d09f4796c4b0598a0f291, type: 3}
+      propertyPath: m_ReferenceResolution.x
+      value: 1920
+      objectReference: {fileID: 0}
+    - target: {fileID: 6942099696410061987, guid: 7ff2c130112d09f4796c4b0598a0f291, type: 3}
+      propertyPath: m_ReferenceResolution.y
+      value: 1080
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
